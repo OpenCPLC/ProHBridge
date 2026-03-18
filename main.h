@@ -1,39 +1,27 @@
 /**
- * @name  Projekt: umg/hbridge
- * @brief Podstawowe informacje projektowe '#define PRO_x'.
- *        Informacje te są wykorzystywane przez program wizard podczas ładowania projektu.
- *        Nie należy ich usuwać, jednak można je edytować.
- *        Zmiana tych parametrów wymaga ponownego wywołania programu Wizard.
+ * @name  Project: umg/hbridge
+ * @note  PWM signal control via CMD console using Nucleo board and H-bridge.
+ * @brief Project configuration. These values are used by Forge when loading project.
+ *        They should not be removed, but can be edited. Changing requires running Forge again.
  * @date  2025-04-21
  */
+#include <xdef.h>
 
 #ifndef PRO_x
 #define PRO_x
 
 #define PRO_BOARD_NONE
 #define PRO_CHIP_STM32G081
-#define PRO_VERSION         "develop"
-#define PRO_USER_MEMORY_KB  4
-#define PRO_OPT_LEVEL       "Og"
+#define PRO_VERSION "develop"
+#define PRO_FLASH_kB 120
+#define PRO_RAM_kB 36
+#define PRO_OPT_LEVEL "Og"
 
 #endif
 
 /**
- * @brief W tym pliku należy umieścić parametry konfiguracyjne '#define', które chce się nadpisać.
- * @note  Wiele z bibliotek załącza ten plik '#include', zatem musi on istnieć, nawet jeśli będzie pusty.
- *        Dzięki takiemu rozwiązaniu można nadpisać różnego rodzaju definicje (zmienne) konfiguracyjne.
- *        Biblioteki w pierwszej kolejności będą pobierały definicje zawarte tutaj,
- *        zamiast korzystać z domyślnych wartości zawartych we własnych plikach nagłówkowych '.h'.
- *        Ten mechanizm można również zastosować w swoich projektach, używając dyrektyw warunkowych #ifndef
- *        i dołączając plik main.h w celu nadpisania domyślnych definicji.​
+ * @brief Put here config parameters `#define` that should be overridden.
+ * @note  Many libraries include this file, so it must exist even if empty.
  */
-
-#define LOG_LEVEL       LOG_LEVEL_INF
-#define SYS_CLOCK_FREQ  64000000
-
-#ifndef MAIN_H_
-#define MAIN_H_
-
-#define DRIVER_LIN_NEGATION 1
-
-#endif
+#define LOG_LEVEL LOG_LEVEL_INF
+#define SYS_CLOCK_FREQ 16000000
