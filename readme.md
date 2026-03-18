@@ -7,6 +7,7 @@ PWM H-bridge control via CMD console on STM32G081 _(Nucleo)_.
 ```sh
 pip install opencplc # install Forge
 opencplc -g https://github.com/OpenCPLC/ProHBridge # download project
+make # build
 make run # build & flash
 ```
 
