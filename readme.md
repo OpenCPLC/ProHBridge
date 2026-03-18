@@ -28,7 +28,7 @@ ON # enable H-bridge
 | -------------- | ------------------------------------ |
 | `<val>Hz`      | Frequency _(e.g. `1000Hz`, `20kHz`)_ |
 | `<val>%`       | Duty cycle _(e.g. `50%`, `10%`)_     |
-| `<val>s/ms/us` | Dead time _(e.g. `2.5us`, `700ns`)_  |
+| `<val>s`       | Dead time _(e.g. `2.5us`, `700ns`)_  |
 | `ON` / `Start` | Enable H-bridge output               |
 | `OFF` / `Stop` | Disable H-bridge output              |
 
