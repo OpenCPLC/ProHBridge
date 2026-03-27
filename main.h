@@ -12,7 +12,7 @@
 
 #define PRO_BOARD_NONE
 #define PRO_CHIP_STM32G081
-#define PRO_VERSION "develop"
+#define PRO_VERSION "0.2.1"
 #define PRO_FLASH_kB 120
 #define PRO_RAM_kB 36
 #define PRO_OPT_LEVEL "Og"
